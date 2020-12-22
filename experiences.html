@@ -92,7 +92,6 @@ here</a>.
   <img class="mySlides" src="/assets/img/3.jpg" style="width:70%">
   <img class="mySlides" src="/assets/img/10.jpg" style="width:70%">
   <img class="mySlides" src="/assets/img/11.jpg" style="width:70%">
-  <img class="mySlides" src="/assets/img/6.jpg" style="width:70%">
   <img class="mySlides" src="/assets/img/8.jpg" style="width:70%">
   <img class="mySlides" src="/assets/img/9.jpg" style="width:70%">
   <img class="mySlides" src="/assets/img/4.jpg" style="width:70%">
@@ -108,8 +107,8 @@ function carousel1() {
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
-    slideIndex++;
   }
+  slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1}
   x[slideIndex-1].style.display = "block";
   setTimeout(carousel1, 2000); // Change image every 2 seconds
