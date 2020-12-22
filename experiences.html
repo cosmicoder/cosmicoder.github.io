@@ -45,11 +45,11 @@ function carousel() {
   var x1 = document.getElementsByClassName("mySlides1");
   for (i = 0; i < x1.length; i++) {
     x1[i].style.display = "none";
-  slideIndex++;
+    slideIndex++;
+  }
   if (slideIndex > x1.length) {slideIndex = 0}
   x1[slideIndex-1].style.display = "block";
   setTimeout(carousel, 2000); // Change image every 2 seconds
-  }
 }
 </script>
 
@@ -108,11 +108,10 @@ function carousel1() {
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
-    
-  slideIndex++;
+    slideIndex++;
+  }
   if (slideIndex > x.length) {slideIndex = 0}
   x[slideIndex-1].style.display = "block";
   setTimeout(carousel1, 2000); // Change image every 2 seconds
-  }
 }
 </script>
