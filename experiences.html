@@ -9,8 +9,8 @@ cover-img:
 ---
 
 <b>
-<h2>PSLV C-42 Launch</h2>
-<h5>Satish Dhawan Space Center - Sriharikota, India</h5>
+<h1>PSLV C-42 Launch</h1>
+<h3>Satish Dhawan Space Center - Sriharikota, India</h3>
 </b>
 
 <p>
@@ -22,14 +22,15 @@ from my interactions with Dr. P Radhakrishnan. This was one of the most memorabl
 You can discover every nuance of my journey in <a href="https://thecosmicaddress.wordpress.com/2018/09/21/lift-off/">this</a> dedicated blog post.
 </p>
 
-<h4>Image Gallery - PSLV C-42 Launch</h4>
-
+<h3>Image Gallery - PSLV C-42 Launch</h3>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <div class="w3-content w3-display-container">
-  <img class="mySlides" src="/assets/img/isro.jpg" style="width:100%">
-  <img class="mySlides" src="/assets/img/isro1.jpg" style="width:100%">
-  <img class="mySlides" src="/assets/img/isro2.jpg" style="width:100%">
-  <img class="mySlides" src="/assets/img/isro7.jpg" style="width:100%">
+  <img class="mySlides" src="/assets/img/isro.jpg" style="width:50%">
+  <img class="mySlides" src="/assets/img/isro1.jpg" style="width:50%">
+  <img class="mySlides" src="/assets/img/isro2.jpg" style="width:50%">
+  <img class="mySlides" src="/assets/img/isro7.jpg" style="width:50%">
+  <img class="mySlides" src="/assets/img/isro4.jpg" style="width:50%">
+  <img class="mySlides" src="/assets/img/isro8.jpg" style="width:50%">
 </div>
 
 <script>
@@ -52,8 +53,8 @@ function carousel() {
 <hr />
 
 <b>
-  <h2>CMS Experiment & SM-18 Test Facility</h2>
-  <h5>CERN - Geneva, Switzerland</h5>
+  <h1>CMS Experiment & SM-18 Test Facility</h1>
+  <h3>CERN - Geneva, Switzerland</h3>
 </b>
 
 <p>
@@ -80,18 +81,34 @@ You can view my credential <a href="https://documentcloud.adobe.com/link/track?u
 here</a>.
 </p>
 
-  <h4>Image Gallery - CERN</h4>
+<h3>Image Gallery - CERN</h3>
 
-  <div class="box alt">
-    <div class="row gtr-50 gtr-uniform">
-      <div class="col-4"><span class="image fit"><img src="/assets/img/1.jpg" alt="" /></span></div>
-      <div class="col-4"><span class="image fit"><img src="/assets/img/2.jpg" alt="" /></span></div>
-      <div class="col-4"><span class="image fit"><img src="/assets/img/3.jpg" alt="" /></span></div>
-      <div class="col-4"><span class="image fit"><img src="/assets/img/10.jpg" alt="" /></span></div>
-      <div class="col-4"><span class="image fit"><img src="/assets/img/11.jpg" alt="" /></span></div>
-      <div class="col-4"><span class="image fit"><img src="/assets/img/6.jpg" alt="" /></span></div>
-      <div class="col-4"><span class="image fit"><img src="/assets/img/8.jpg" alt="" /></span></div>
-      <div class="col-4"><span class="image fit"><img src="/assets/img/9.jpg" alt="" /></span></div>
-      <div class="col-4"><span class="image fit"><img src="/assets/img/4.jpg" alt="" /></span></div>
-    </div>
-  </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="/assets/img/1.jpg" style="width:50%">
+  <img class="mySlides" src="/assets/img/2.jpg" style="width:50%">
+  <img class="mySlides" src="/assets/img/3.jpg" style="width:50%">
+  <img class="mySlides" src="/assets/img/10.jpg" style="width:50%">
+  <img class="mySlides" src="/assets/img/11.jpg" style="width:50%">
+  <img class="mySlides" src="/assets/img/6.jpg" style="width:50%">
+  <img class="mySlides" src="/assets/img/8.jpg" style="width:50%">
+  <img class="mySlides" src="/assets/img/9.jpg" style="width:50%">
+  <img class="mySlides" src="/assets/img/4.jpg" style="width:50%">
+</div>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
