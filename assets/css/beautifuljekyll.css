@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Futura', Helvetica, sans-serif;
+  font-family: 'futura-pt', Helvetica, sans-serif;
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
