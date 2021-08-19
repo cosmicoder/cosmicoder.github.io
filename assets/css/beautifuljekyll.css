@@ -31,7 +31,7 @@ p {
 h1,h2,h3,h4,h5,h6 {
   /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
   font-family: 'futura-pt', Helvetica, sans-serif;
-  font-weight: 900;
+  font-weight: 1100;
   line-height: 1.1;
 }
 h1 {
@@ -129,6 +129,7 @@ img {
   background-color: {{ site.navbar-col | default: "#EAEAEA" }};
   border-bottom: 1px solid {{ site.navbar-border-col | default: "#DDDDDD" }};
   font-family: 'futura-pt', Helvetica, sans-serif;
+  font-weight: 1100
   /*font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   {% if site.navbar-img %}
     background-image: url({{ site.navbar-img | relative_url }});
