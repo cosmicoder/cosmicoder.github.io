@@ -14,12 +14,12 @@ author: Aniket Sanghi
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  CV: "/assets/img/Sanghi_Aniket_CV.pdf"
   Academics: "academics"
   Research: "research"
   Activities: "activities"
   Mentors: "mentors"
-  CV: "/assets/img/Sanghi_Aniket_CV.pdf"
-
+  
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
