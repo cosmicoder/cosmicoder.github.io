@@ -6,60 +6,108 @@ cover-img:
   - "/assets/img/lighthouse.jpeg"
 ---
 
-<div class="row">
-  <div class="column">
-    <a href="https://etlab.caltech.edu/et-lab-people/dimitri-mawet?back_url=%2Fet-lab-people">
-      <img src="/assets/img/dimitri.jpg" alt="Nature" onclick="myFunction(this);"></a>
-  </div>
-  <div class="column">
-    <a href="http://www.as.utexas.edu/~bpbowler/">
-      <img src="/assets/img/brendan.jpeg" alt="Snow" onclick="myFunction(this);"></a>
+<div class='container'>
+  
+  <div class='pics_in_a_row2'>
+    <div class='img1'>
+      <img src='/assets/img/dimitri.jpg'>
+    </div>
+    <div class='img2'>
+      <img src='/assets/img/brendan.jpeg'>
+    </div>
+    <div class='img3'>
+      <img src='/assets/img/jason.jpg'>
+    </div>
   </div>
   
- <div class="row">
-  <div class="column">
-    <a href="https://etlab.caltech.edu/et-lab-people/jason-wang?back_url=%2Fet-lab-people">
-      <img src="/assets/img/jason.jpg" alt="Mountains" onclick="myFunction(this);"></a>
+  <div class='pics_in_a_row3'>
+    <div class='img4'>
+      <img src='/assets/img/yifan.jpeg'>
+    </div>
+    <div class='img5'>
+      <img src='/assets/img/zach.jpeg'>
+    </div>
   </div>
-   <div class="column">
-    <a href="https://yifanzhou.space/">
-      <img src="/assets/img/yifan.jpeg" alt="Snow" onclick="myFunction(this);"></a>
-  </div>
+ 
 </div>
-
-<div class="row">
-  <div class="column">
-    <a href="http://zvanderbosch.com/">
-      <img src="/assets/img/zach.jpeg" alt="Nature" onclick="myFunction(this);"></a>
-  </div>
-  <div class="column">
-    <a href="https://wenhaoxuan.github.io/">
-      <img src="/assets/img/jerry_2.jpeg" alt="Mountains" onclick="myFunction(this);"></a>
-  </div>
-</div>
-
 
 <style>
-.column {
-  float: left;
-  width: 25%;
-  padding: 5px;
+  img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8;
-  cursor: pointer;
+.pics_in_a_row {
+  display: flex;
 }
 
-.column img:hover {
-  opacity: 1;
+.img1 { flex: 1.3344; }
+.img2 { flex: 1.3345; }
+.img3 { flex: 0.7505; }
+.img4 { flex: 1.5023; }
+.img5 { flex: 0.75; }
+
+
+
+/* Aaaand just some general styling. */
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+body {
+  background: rebeccapurple;
+}
+
+.container {
+  background: white;
+  margin: 0 auto;
+  padding: 5%;
+  width: 75%;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+.muted {
+  font-style: italic;
+  color: #666;
+}
+
+p, li {
+  line-height: 1.5
+}
+
+li {
+  margin-bottom: 7px;
+}
+
+p + p {
+  margin-top: -7px;
+}
+
+code {
+  background: #eee;
+  padding: 2px 5px;
+  font-size: 90%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+.pics_in_a_row {
+  margin: 25px 0;
+}
+
+.pics_in_a_row > div:not(:last-child) {
+  margin-right: 2%;
 }
 </style>
