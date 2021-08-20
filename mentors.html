@@ -8,36 +8,85 @@ cover-img:
 
 <div class="row">
   <div class="column">
-    <img src="/assets/img/dimitri.jpg" longdesc="https://etlab.caltech.edu/et-lab-people/dimitri-mawet?back_url=%2Fet-lab-people">
-    <img src="/assets/img/yifan.jpeg" longdesc="https://yifanzhou.space/">
-    <img src="/assets/img/jerry.jpeg" longdesc="https://wenhaoxuan.github.io/">
+    <img src="/assets/img/dimitri.jpg" alt="Nature" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <figure>
-    <img src="/assets/img/brendan.jpeg" longdesc="http://www.as.utexas.edu/~bpbowler/">
-    <figcaption>Caption goes here</figcaption>
-    </figure>
-    <img src="/assets/img/jason.jpg" longdesc="https://etlab.caltech.edu/et-lab-people/jason-wang?back_url=%2Fet-lab-people">
-    <img src="/assets/img/zach.jpeg" longdesc="http://zvanderbosch.com/">
+    <img src="/assets/img/brendan.jpeg" alt="Snow" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/assets/img/jason.jpg" alt="Mountains" onclick="myFunction(this);">
   </div>
 </div>
 
- <style>
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
+<div class="row">
+  <div class="column">
+    <img src="/assets/img/zach.jpeg" alt="Nature" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/assets/img/yifan.jpeg" alt="Snow" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/assets/img/jerry_2.jpeg" alt="Mountains" onclick="myFunction(this);">
+  </div>
+</div>
 
-/* Create two equal columns that sits next to each other */
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+/* The grid: Four equal columns that floats next to each other */
 .column {
-  flex: 50%;
-  padding: 0 4px;
+  float: left;
+  width: 25%;
+  padding: 10px;
 }
 
+/* Style the images inside the grid */
 .column img {
-  margin-top: 8px;
-  vertical-align: middle;
+  opacity: 0.8;
+  cursor: pointer;
 }
-   
-</style>
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
