@@ -6,78 +6,34 @@ cover-img:
   - "/assets/img/lighthouse.jpeg"
 ---
 
-<style>
-div.gallery {
-  margin: 10px;
-  float: left;
-  width: 340px;
+<div class="row">
+  <div class="column">
+    <img src="/assets/img/dimitri.jpg">
+    <img src="/assets/img/brendan.jpeg">
+    <img src="/assets/img/jerry.jpeg">
+  </div>
+  <div class="column">
+    <img src="/assets/img/jason.jpg">
+    <img src="/assets/img/zach.jpeg">
+    <img src="/assets/img/yifan.jpeg">
+  </div>
+</div>
+
+ <style>
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 10px;
-  text-align: center;
-  
-img-container {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
 }
 </style>
-
-
-<div class="gallery">
-  <a target="_blank" href="https://etlab.caltech.edu/et-lab-people/dimitri-mawet?back_url=%2Fet-lab-people">
-    <img src="/assets/img/dimitri.jpg" alt="Dr. Dimitri Mawet" width="800" height="800">
-  </a>
-  <div class="desc">Dr. Dimitri Mawet, Professor of Astronomy, Caltech</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="http://www.as.utexas.edu/~bpbowler/">
-    <img src="/assets/img/brendan.jpeg" alt="Dr. Brendan P. Bowler" width="900" height="900">
-  </a>
-  <div class="desc">Dr. Brendan P. Bowler, Assistant Professor, The University of Texas at Austin</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="https://etlab.caltech.edu/et-lab-people/jason-wang?back_url=%2Fet-lab-people">
-    <img src="/assets/img/jason.jpg" alt="Dr. Jason J. Wang" width="800" height="800">
-  </a>
-  <div class="desc">Dr. Jason J. Wang, 51 Pegasi b Postdoctoral Scholar, Caltech</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="http://zvanderbosch.com/">
-    <img src="/assets/img/zach.jpeg" alt="Dr. Zachary P. Vanderbosch" width="600" height="600">
-  </a>
-  <div class="desc">Dr. Zachary P. Vanderbosch, Postdoctoral Scholar, Caltech</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="https://yifanzhou.space/">
-    <img src="/assets/img/yifan.jpeg" alt="Dr. Yifan Zhou" width="400" height="400">
-  </a>
-  <div class="desc">Dr. Yifan Zhou, 51 Pegasi b Postdoctoral Fellow, The University of Texas at Austin</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="https://wenhaoxuan.github.io/">
-    <img src="/assets/img/jerry_2.jpeg" alt="Jerry Xuan" width="600" height="600">
-  </a>
-  <div class="desc">Jerry Xuan, Graduate Student, Caltech</div>
-</div>
