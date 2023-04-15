@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: 'futura-pt', Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
@@ -31,7 +31,7 @@ p {
 h1,h2,h3,h4,h5,h6 {
   /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
   font-family: 'futura-pt', Helvetica, sans-serif;
-  font-weight: 1100;
+  font-weight: 1500;
   line-height: 1.1;
 }
 h1 {
