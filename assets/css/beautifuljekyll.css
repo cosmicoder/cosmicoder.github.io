@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: 'futura-pt', Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
@@ -26,7 +26,7 @@ body {
 }
 p {
   line-height: 1.5;
-  margin: 1.275rem 0; 
+  margin: 1.0rem 0; 
 /*   1.875 */
 }
 h1,h2,h3,h4,h5,h6 {
