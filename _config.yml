@@ -18,7 +18,7 @@ navbar-links:
 #   Academics: "academics"
   Research: 
     - Exoplanet Imaging: "planets"
-    - Brown Dwarf Populations: "bd"
+    - Brown Dwarfs: "bd"
     - Stars, Math, and More: "more"
 #   Activities: "activities"
   Mentors: "mentors"
@@ -34,7 +34,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: "/assets/img/exo.jpeg"
+# title-img: "/assets/img/exo.jpeg"
 
 
 # --- Footer social media links --- #
