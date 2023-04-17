@@ -15,9 +15,12 @@ author: Aniket Sanghi
 
 navbar-links:
   CV: "/assets/img/Sanghi_Aniket_CV.pdf"
-  Academics: "academics"
-  Research: "research"
-  Activities: "activities"
+#   Academics: "academics"
+  Research: 
+    - Exoplanet Imaging: "planets"
+    - Brown Dwarf Populations: "bd"
+    - Stars, Math, and More: "more"
+#   Activities: "activities"
   Mentors: "mentors"
   
 # --- Logo --- #
@@ -31,7 +34,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+title-img: "/assets/img/exo.jpeg"
 
 
 # --- Footer social media links --- #
