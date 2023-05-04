@@ -14,6 +14,7 @@ author: Aniket Sanghi
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  About Me: "aboutme"
   CV: "/assets/img/Sanghi_Aniket_CV.pdf"
 #   Academics: "academics"
   Research: 
