@@ -19,7 +19,7 @@ navbar-links:
 #   Academics: "academics"
   Research: 
     - Exoplanet Imaging: "planets"
-#     - Brown Dwarfs: "bd"
+    - Brown Dwarfs: "bd"
     - Stars, Math, and More: "more"
 #   Activities: "activities"
   Mentors: "mentors"
