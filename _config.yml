@@ -43,7 +43,7 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "asanghi01@utexas.edu"
+  email: "asanghi@caltech.edu"
   github: cosmicoder
   twitter: exoAS23b
 # patreon: DeanAttali
