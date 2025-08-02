@@ -114,11 +114,18 @@ figure figcaption {
   padding: 15px 2px
 }
   
-  img {
+/*   img {
   width: 100%;
   height: auto;
   vertical-align: middle;
   horizontal-align: middle;
+} */
+figure img {
+  height: 300px; /* Or any height you prefer */
+  width: auto;
+  object-fit: cover; /* optional: crop to fill the height */
+  display: block;
+  margin: 0 auto;
 }
 
 .pics_in_a_row {
