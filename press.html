@@ -1,0 +1,224 @@
+---
+layout: page
+title: P R E S S
+subtitle: Sharing the Discoveries
+cover-img:
+  - "/assets/img/lighthouse.jpeg"
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>News Panels — single column</title>
+
+  <style>
+    /* page container similar to your mentors site */
+    :root{
+      --max-width:1100px;
+      --panel-gap:28px;
+      --panel-radius:16px;
+      --panel-padding:18px;
+      --logo-size:96px;
+      --muted:#666;
+      --accent:#0b64a0;
+      --bg:#fafafa;
+    }
+
+    body{
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin:0;
+      background: var(--bg);
+      color: #111;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .site {
+      max-width: var(--max-width);
+      margin: 36px auto;
+      padding: 24px;
+    }
+
+    header.site-header {
+      text-align: left;
+      margin-bottom: 18px;
+    }
+    header.site-header h1 { margin: 0; font-size: 28px; letter-spacing: 4px; }
+    header.site-header p { margin: 6px 0 18px; color: var(--muted); }
+
+    /* Column of panels */
+    .panels {
+      display:flex;
+      flex-direction:column;
+      gap: var(--panel-gap);
+    }
+
+    /* Single panel style */
+    .panel {
+      display:flex;
+      gap: 18px;
+      align-items: stretch;
+      background: white;
+      border-radius: var(--panel-radius);
+      padding: var(--panel-padding);
+      box-shadow: 0 6px 20px rgba(20,20,30,0.06);
+      text-decoration: none;
+      color: inherit;
+      transition: transform .12s ease, box-shadow .12s ease;
+      min-height: 120px;
+      overflow: hidden;
+    }
+    .panel:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(20,20,30,0.10);
+    }
+
+    /* logo column */
+    .panel .logo {
+      width: var(--logo-size);
+      min-width: var(--logo-size);
+      height: var(--logo-size);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:12px;
+      background: #fff;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+      flex-shrink:0;
+    }
+    .panel .logo img { max-width: 100%; max-height: 100%; display:block; }
+
+    /* main content (headline crop + meta) */
+    .panel .content {
+      flex:1;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      justify-content:center;
+    }
+
+    /* the 'cropped headline' box - fixed height and overflow hidden to simulate a cropped image */
+    .headline-crop {
+      height: 76px;                 /* controls how much headline is shown (cropped) */
+      overflow: hidden;
+      border-radius: 8px;
+      padding: 10px;
+      display:block;
+      background: linear-gradient(180deg, rgba(235,240,245,0.9), rgba(245,250,255,0.9));
+      box-shadow: inset 0 -20px 30px rgba(10,50,80,0.02);
+    }
+    .headline-crop h3 {
+      margin:0;
+      font-size:18px;
+      line-height:1.1;
+      font-weight:700;
+      letter-spacing: -0.3px;
+      color:#071b2a;
+    }
+    .headline-crop p.lead {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.15;
+    }
+
+    .meta-row {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      font-size:13px;
+      color:var(--muted);
+    }
+    .meta-row .source { font-weight:700; color: var(--accent); }
+    .meta-row .date { white-space:nowrap; }
+
+    /* responsive */
+    @media (max-width:720px){
+      :root{ --logo-size:72px; }
+      .headline-crop h3 { font-size:16px; }
+      .panel { padding:14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header class="site-header">
+      <h1>M E N T O R S</h1>
+      <p>Lighting the Path to Discovery</p>
+    </header>
+
+    <main>
+      <div class="panels">
+
+        <!-- Panel 1: New York Times (user URL) -->
+        <a class="panel" href="https://www.nytimes.com/2025/08/08/science/alpha-centauri-planet-webb-telescope.html" target="_blank" rel="noopener">
+          <div class="logo" aria-hidden="true">
+            <!-- NYT logo / favicon (replace with a higher-res logo if you have one) -->
+            <img src="https://www.nytimes.com/favicon.ico" alt="NYT logo" />
+          </div>
+
+          <div class="content">
+            <div class="headline-crop">
+              <!-- Replace this text with a cropped screenshot if you generate one. -->
+              <h3>Possible planet is spotted around sunlike Alpha Centauri star</h3>
+              <p class="lead">By The New York Times — Aug 8, 2025</p>
+            </div>
+
+            <div class="meta-row">
+              <div class="source">The New York Times</div>
+              <div class="date">Aug 8, 2025</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Panel 2: Scientific American -->
+        <a class="panel" href="https://www.scientificamerican.com/article/jwst-spots-possible-alien-planet-at-alpha-centauri/" target="_blank" rel="noopener">
+          <div class="logo" aria-hidden="true">
+            <!-- SciAm favicon -->
+            <img src="https://www.scientificamerican.com/favicon.ico" alt="Scientific American logo" />
+          </div>
+
+          <div class="content">
+            <div class="headline-crop">
+              <h3>Our Nearest Sunlike Star Might Have a Planet, JWST Shows in Stunning Finding</h3>
+              <p class="lead">By Meghan Bartels — Aug 7, 2025</p>
+            </div>
+
+            <div class="meta-row">
+              <div class="source">Scientific American</div>
+              <div class="date">Aug 7, 2025</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Panel 3: NASA Science / Webb -->
+        <a class="panel" href="https://science.nasa.gov/missions/webb/nasas-webb-finds-new-evidence-for-planet-around-closest-solar-twin/" target="_blank" rel="noopener">
+          <div class="logo" aria-hidden="true">
+            <!-- NASA science favicon (replace with a larger NASA logo if you prefer) -->
+            <img src="https://science.nasa.gov/favicon.ico" alt="NASA Science logo" />
+          </div>
+
+          <div class="content">
+            <div class="headline-crop">
+              <h3>NASA’s Webb Finds New Evidence for Planet Around Closest Solar Twin</h3>
+              <p class="lead">NASA Science — Aug 2025</p>
+            </div>
+
+            <div class="meta-row">
+              <div class="source">science.nasa.gov</div>
+              <div class="date">Aug 2025</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </main>
+
+    <footer style="margin-top:28px; color:var(--muted); font-size:13px;">
+      <p>Panels show site logos and a cropped headline area. Replace the headline-crop blocks with actual cropped images if you want a pixel-perfect "headline image".</p>
+    </footer>
+  </div>
+</body>
+</html>
