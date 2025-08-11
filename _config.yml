@@ -15,7 +15,6 @@ author: Aniket Sanghi
 
 navbar-links:
   About: "aboutme"
-  CV: "/assets/img/Sanghi_Aniket_CV.pdf"
 #   Academics: "academics"
   Research: 
     - Exoplanet Imaging: "planets"
@@ -23,6 +22,8 @@ navbar-links:
     - Stars, Math, and More: "more"
 #   Activities: "activities"
   Mentors: "mentors"
+  Press: "press"
+  CV: "/assets/img/Sanghi_Aniket_CV.pdf"
   
 # --- Logo --- #
 
