@@ -16,10 +16,10 @@ author: Aniket Sanghi
 navbar-links:
   About: "aboutme"
 #   Academics: "academics"
-  Research: 
-    - Exoplanet Imaging: "planets"
-    - Brown Dwarfs: "bd"
-    - Stars, Math, and More: "more"
+  # Research: 
+  #   - Exoplanet Imaging: "planets"
+  #   - Brown Dwarfs: "bd"
+  #   - Stars, Math, and More: "more"
 #   Activities: "activities"
   Mentors: "mentors"
   Press: "press"
