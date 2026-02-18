@@ -14,7 +14,7 @@ author: Aniket Sanghi
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About: "aboutme"
+  About Me: "aboutme"
 #   Academics: "academics"
   # Research: 
   #   - Exoplanet Imaging: "planets"
